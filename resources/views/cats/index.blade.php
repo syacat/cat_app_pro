@@ -8,7 +8,7 @@
   <link rel="stylesheet" type="text/css" href="{{ asset('css/base.css') }}">
   <link rel="stylesheet" type="text/css" href="{{ asset('css/lightbox.css') }}">
   <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Home</title>
+    <title>Homee</title>
 </head>
 <body>
 
