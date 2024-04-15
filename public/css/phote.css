@@ -1,0 +1,145 @@
+@charset "utf-8";
+html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,:after,:before{background-repeat:no-repeat;box-sizing:inherit}:after,:before{text-decoration:inherit;vertical-align:inherit}*{padding:0;margin:0;box-sizing:border-box;}audio:not([controls]){display:none;height:0}hr{overflow:visible}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}summary{display:list-item}small{font-size:80%}[hidden],template{display:none}abbr[title]{border-bottom:1px dotted;text-decoration:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}code,kbd,pre,samp{font-family:monospace,monospace}b,strong{font-weight:bolder}dfn{font-style:italic}mark{background-color:#ff0;color:#000}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}input{border-radius:0}[role=button],[type=button],[type=reset],[type=submit],button{cursor:pointer}[disabled]{cursor:default}[type=number]{width:auto}[type=search][type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}textarea{overflow:auto;resize:vertical}button,input,optgroup,select,textarea{font:inherit}optgroup{font-weight:700}button{overflow:visible}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:0;padding:0}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button:-moz-focusring{outline:1px dotted}[type=reset],[type=submit],button,html [type=button]button,select{text-transform:none}button,input,select,textarea{background-color:transparent;border-style:none;color:inherit}select::-ms-expand{display:none}select::-ms-value{color:currentColor}legend{border:0;color:inherit;display:table;max-width:100%;white-space:normal}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}[type=search]img{border-style:none;vertical-align: bottom}progress{vertical-align:baseline}svg:not(:root){overflow:hidden}audio,canvas,progress,video{display:inline-block}@media screen{[hidden~=screen]{display:inherit}[hidden~=screen]:not(:active):not(:focus):not(:target){position:absolute!important;clip:rect(0 0 0 0)!important}}[aria-busy=true]{cursor:progress}[aria-controls]{cursor:pointer}[aria-disabled]{cursor:default}::-moz-selection{background-color:#b3d4fc;color:#000;text-shadow:none}::selection{background-color:#b3d4fc;color:#000;text-shadow:none}ul,ol{list-style:none;}a{text-decoration:none;}img{max-width: 100%;vertical-align: bottom;}
+/* public/css/styles.css */
+
+#header-page{
+    display: none;
+    /* background: url(../img/hed2.jpg)no-repeat center center; */
+}
+#top-page{
+    margin-bottom: 100px;
+}
+body {
+    /* background-color: #ff8c00; */
+    background: url(../img/bg4.webp)no-repeat  center;
+
+}
+
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    border-radius: 15px; /* 角を丸くする */
+    padding: 20px; 
+    margin-bottom: 500px;
+}
+
+.form-label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.form-control {
+    width: 99%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.8); /* 背景色を調整 */
+    padding: 10px 15px;
+    border-radius: 15px; /* 角を丸くする */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 影を追加 */
+}
+.form-control:focus {
+    background-color: rgba(255, 255, 255, 0.9); /* フォーカス時の背景色を少し明るくする */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* フォーカス時の影を強調 */
+}
+
+.form-control::placeholder {
+    color: #999; /* プレースホルダーの色 */
+}
+.mb-3 {
+    margin-bottom: 1.5rem;
+}
+
+h1 {
+    font-family:'Questrial', Verdana, sans-serif;
+    text-align:center;
+    font-size:40px;
+    padding:0;
+    margin:0 0 20px 0;
+    position:relative;
+    color:#8C8C8C;
+}
+
+ #content {
+    position:relative;
+    width:900px;
+    z-index:100;
+    padding:60px;
+    background-color: rgba(255, 255, 255, 0.1); /* 背景色 */
+    border: 1px solid rgba(255, 255, 255, 0.4); /* ボーダー */
+    border-right-color: rgba(255, 255, 255, 0.2);
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    -webkit-backdrop-filter: blur(20px); /* ぼかしエフェクト */
+    backdrop-filter: blur(20px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); /* 薄い影 */
+}
+
+/** inputs and textarea**/
+ .btn, textarea {
+    outline:none;
+    display:block;
+    width:330px;
+    padding:5px 8px;
+    border:1px dashed #DBDBDB;
+    color:#3F3F3F;
+    font-family:'Droid Sans', Tahoma, Arial, Verdana sans-serif;
+    font-size:14px;
+}
+.btn:active, textarea:active, input:not([type="submit"]):focus, textarea:focus {
+    background:#F7F7F7;
+    border:dashed 1px #969696;
+    /*box-shadow*/
+    -webkit-box-shadow:2px 2px 7px #E8E8E8 inset;
+    -moz-box-shadow:2px 2px 7px #E8E8E8 inset;
+    box-shadow:2px 2px 7px #E8E8E8 inset;
+}
+
+/* placeholder */
+ ::-webkit-input-placeholder {
+    color:#BABABA;
+    font-style:italic;
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+    color:#BABABA;
+    font-style:italic;
+}
+textarea {
+    min-height:100px;
+    resize:vertical
+}
+
+.required {
+    color:#E5224C;
+}
+/** Styling the send button **/
+ .btn {
+    height: 45px;
+    margin: 0 auto;
+    background-color: #bf7aee; /* ボタンの背景色 */
+    color: #fff; /* ボタンのテキスト色を白に設定 */
+    box-shadow: 0 0 15px rgba(191, 122, 238, 0.5); /* ボタンの影の色を変更 */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px; /* 角を丸くする */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+
+}
+
+.btn:hover {
+    background-color: #5ee7fd; /* ホバー時の背景色 */
+}
+.btn:active,.btn:focus {
+    position:relative;
+    top:1px;
+    box-shadow: 0 0 15px rgba(191, 122, 238, 0.8); /* クリック時の影の色を変更 */
+}
+
+.required {
+    color: #ff0000; /* 必須フィールドの色 */
+    font-weight: bold;
+}
