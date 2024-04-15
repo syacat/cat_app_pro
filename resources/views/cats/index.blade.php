@@ -11,7 +11,7 @@
     <title>Home</title>
 </head>
 <body>
-  
+
  @include('cats.header')
   <h1>Gallery</h1><!-- クリックしたら動かしたいときはa要素で囲む(動かしたい対象全て) -->
   <ul class="gallery">
@@ -19,7 +19,7 @@
     <li>
       <a href="{{ asset(Storage::url($photo->image_path)) }}" class="gallery-photo" data-lightbox="gallery1" data-title="{{ $photo->caption }}">
           <img src="{{ asset(Storage::url($photo->image_path)) }}" class="gallery-photo">
-        <img src="{{ asset('img/heart1.svg') }}" class="heart-icon" alt="ハート">
+          <img src="{{ asset('img/heart1.svg') }}" class="heart-icon" alt="ハート">
       </a>
     </li>
     @endforeach
