@@ -1,3 +1,7 @@
+<?php 
+// template Name:ブログページ
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>

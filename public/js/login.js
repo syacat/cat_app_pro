@@ -5,7 +5,7 @@ $('#password').focusin(function(){
     $('form').removeClass('up')
   });
 
-  // Panda Eye move
+  // Eye move
   $(document).on( "mousemove", function( event ) {
     var dw = $(document).width() / 15;
     var dh = $(document).height() / 15;
